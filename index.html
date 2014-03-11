@@ -13,12 +13,14 @@
 
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+
 <script type="text/javascript">
 function init(){
      document.addEventListener("deviceready", onDeviceReady, false);
 }
 function onDeviceReady(){
-    document.getElementById("photoBut").onclick=photo();
+	alert(hello);
+    document.getElementById("photoBut").onclick=photo;
 }
 function photo(){
     var cameraOptions={ quality : 75,
