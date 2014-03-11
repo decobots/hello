@@ -20,7 +20,7 @@ function init(){
 }
 function onDeviceReady(){
     console.log($("#photoBut"));
-    $("#photoBut").addEventListener("click", photo,false);
+    $("#photoBut").onclick=photo();
 }
 function photo(){
       console.log("photo");
