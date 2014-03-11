@@ -7,12 +7,25 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css" />
+ 
+<link rel="stylesheet" href="nonono.css" />
+<link rel="stylesheet" href="jquery.mobile.icons.min.css" />
+
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
-        
+<script type="text/javascript">
+function init(){
+     document.addEventListener("deviceready", onDeviceReady, false);
+}
+function onDeviceReady(){
+    alert("ok");
+    
+}
+
+</script>        
 </head>
-<body>
-<!-- page1==================================================================================================================== -->
+<body onload="init()">
+<!-- page1========================================================================================== -->
 <div data-role="page" data-theme="a" id="p1">
 
 	<div data-role="header">
@@ -103,7 +116,7 @@
 		<h4>Page Footer</h4>
 	</div><!-- /footer -->
 </div><!-- /page -->
-<!-- dialog2==================================================================================================================== -->
+<!-- dialog2============================================================================================= -->
 <div data-role="page" data-dialog="true" id="dialog2" data-close-btn="right">
 
 	<div data-role="header">
@@ -118,7 +131,7 @@
 		<h4>Page Footer</h4>
 	</div><!-- /footer -->
 </div><!-- /page -->
-<!-- dialog3==================================================================================================================== -->
+<!-- dialog3========================================================================================================= -->
 <div data-role="page" data-dialog="true" id="dialog3" data-close-btn="none">
 
 	<div data-role="header">
@@ -197,6 +210,14 @@
 	<div role="main" class="ui-content">
         <div data-role="navbar">
               <ul>
+                  <li><a href="#" >1</a></li>
+                  <li><a href="#" >2</a></li>
+                  <li><a href="#" >3</a></li>
+                  <li><a href="#" >4</a></li>
+                  <li><a href="#" >1</a></li>
+                  <li><a href="#" >2</a></li>
+                  <li><a href="#" >3</a></li>
+                  <li><a href="#" >4</a></li>
                   <li><a href="#" >1</a></li>
                   <li><a href="#" >2</a></li>
                   <li><a href="#" >3</a></li>
