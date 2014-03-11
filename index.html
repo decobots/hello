@@ -15,15 +15,12 @@
 <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
 <script type="text/javascript">
 function init(){
-    console.log("init");
      document.addEventListener("deviceready", onDeviceReady, false);
 }
 function onDeviceReady(){
-    console.log($("#photoBut"));
-    $("#photoBut").onclick=photo();
+    document.getElementById("photoBut").onclick=photo();
 }
 function photo(){
-      console.log("photo");
     var cameraOptions={ quality : 75,
         destinationType : Camera.DestinationType.DATA_URL,
         sourceType : Camera.PictureSourceType.CAMERA,
@@ -36,7 +33,6 @@ function photo(){
     navigator.camera.getPicture( cameraSuccess, cameraError,cameraOptions );
 }
 function cameraSuccess(imageData){
-     console.log("cameraSuccess");
     $("#photoImg").src = "data:image/jpeg;base64," + imageData;
 }
 function cameraError(){
