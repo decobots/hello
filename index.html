@@ -18,9 +18,11 @@ function init(){
      document.addEventListener("deviceready", onDeviceReady, false);
 }
 function onDeviceReady(){
+    alert("onDeviceReady");
     $("#photoBut").addEventListener("click", photo,false);
 }
 function photo(){
+      alert("photo");
     var cameraOptions={ quality : 75,
         destinationType : Camera.DestinationType.DATA_URL,
         sourceType : Camera.PictureSourceType.CAMERA,
@@ -33,6 +35,7 @@ function photo(){
     navigator.camera.getPicture( cameraSuccess, cameraError,cameraOptions );
 }
 function cameraSuccess(imageData){
+     alert("cameraSuccess");
     $("#photoImg").src = "data:image/jpeg;base64," + imageData;
 }
 function cameraError(){
