@@ -1,14 +1,16 @@
- 
- <widget id="com.example.hello" version="0.0.1">
+<widget id="com.example.hello" version="0.0.1">
         <name>HelloWorld</name>
         <description>
             A sample Apache Cordova application that responds to the deviceready event.
         </description>
-        <author email="dev@callback.apache.org" href="http://phonegap.com">
+        <author email="dev@callback.apache.org" href="http://cordova.io">
             Apache Cordova Team
         </author>
         <content src="index.html" />
         <access origin="*" />
         <preference name="Fullscreen" value="true" />
         <preference name="WebViewBounce" value="true" />
+        <feature name="Device">
+        	<param name="android-package" value="org.apache.cordova.device.Device" />
+        </feature>
     </widget>
