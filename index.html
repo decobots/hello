@@ -23,14 +23,7 @@ function onDeviceReady(){
     	document.getElementById("photoBut").onclick=photo;
 }
 function photo(){
-	var cameraOptions={ quality : 75,
-  		destinationType : Camera.DestinationType.DATA_URL,
-		sourceType : Camera.PictureSourceType.CAMERA,
-		allowEdit : true,
-		encodingType: Camera.EncodingType.JPEG,
-		targetWidth: 100,
-		targetHeight: 100,
-		saveToPhotoAlbum: false };
+	alert(navigator.camera.getPicture);
 	navigator.camera.getPicture(cameraSuccess, cameraError);//, cameraOptions);
 //	alert("photo");
 }
