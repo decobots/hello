@@ -31,12 +31,13 @@ function photo(){
 		targetWidth: 100,
 		targetHeight: 100,
 		saveToPhotoAlbum: false };
-	navigator.camera.getPicture(cameraSuccess, cameraError, cameraOptions);
+	navigator.camera.getPicture(cameraSuccess, cameraError);//, cameraOptions);
 //	alert("photo");
 }
 function cameraSuccess(imageData){
-	var image = document.getElementById('photoImg');
-	image.src = "data:image/jpeg;base64," + imageData;
+	alert("ok");
+//	var image = document.getElementById('photoImg');
+//	image.src = "data:image/jpeg;base64," + imageData;
 }
 
 function cameraError(error){
