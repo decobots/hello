@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
 <widget id="com.example.hello" version="0.0.1">
         <name>HelloWorld</name>
         <description>
@@ -14,3 +15,4 @@
 
         
     </widget>
+</xml>
