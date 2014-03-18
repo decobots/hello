@@ -23,9 +23,26 @@ function onDeviceReady(){
     	document.getElementById("photoBut").onclick=photo;
 }
 function photo(){
-	
-	alert("photo");
+	var cameraOptions={ quality : 75,
+  		destinationType : Camera.DestinationType.DATA_URL,
+		sourceType : Camera.PictureSourceType.CAMERA,
+		allowEdit : true,
+		encodingType: Camera.EncodingType.JPEG,
+		targetWidth: 100,
+		targetHeight: 100,
+		saveToPhotoAlbum: false };
+	navigator.camera.getPicture(cameraSuccess, cameraError, cameraOptions);
+//	alert("photo");
 }
+function cameraSuccess(imageData){
+	var image = document.getElementById('photoImg');
+	image.src = "data:image/jpeg;base64," + imageData;
+}
+
+function cameraError(error){
+	allert(error);
+}
+
 </script>        
 </head>
 <body onload="init()">
