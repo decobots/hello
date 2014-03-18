@@ -11,8 +11,6 @@
         <preference name="Fullscreen" value="true" />
         <preference name="WebViewBounce" value="true" />
         <gap:plugin name="org.apache.cordova.device" />
-        <feature name="Device">
-        	<param name="android-package" value="org.apache.cordova.device.Device" />
-        </feature>
+
         
     </widget>
