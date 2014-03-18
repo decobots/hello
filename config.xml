@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8" ?> 
 <widget id="com.example.hello" version="0.0.1">
         <name>HelloWorld</name>
         <description>
@@ -11,8 +10,4 @@
         <access origin="*" />
         <preference name="Fullscreen" value="true" />
         <preference name="WebViewBounce" value="true" />
-        <gap:plugin name="org.apache.cordova.device" />
-
-        
     </widget>
-</xml>
